@@ -1,0 +1,26 @@
+{
+  "name": "shortenText",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.2",
+    "gulp-karma": "0.0.4",
+    "html2js": "^0.2.0",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "^0.2.7",
+    "karma-fixture": "^0.2.3",
+    "karma-html2js-preprocessor": "^0.1.0",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.2.1"
+  }
+}
