@@ -25,7 +25,9 @@
     "karma-html2js-preprocessor": "^0.1.0",
     "karma-mocha": "^0.1.10",
     "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sinon": "^1.0.4",
     "mocha": "^2.2.1",
-    "mocha-lcov-reporter": "0.0.2"
+    "mocha-lcov-reporter": "0.0.2",
+    "sinon": "^1.14.1"
   }
 }

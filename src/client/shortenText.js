@@ -11,18 +11,24 @@ window.shortenText = (function() {
 
   TextShorterer.prototype.execute = function() {
     var el = document.querySelector(this.selector);
-    var style = window.getComputedStyle(el);
+    if(el) {
 
-    this.width = parseInt(style.width);
-    this.testEl = this.createTestEl(el, style);
-    document.body.appendChild(this.testEl);
+      var style = window.getComputedStyle(el);
 
-    this.fitWords();
-    if(this.ifTextMustBeShorten) {
-      this.fitLetters();
-      this.insertEndingChar();
+      this.width = parseInt(style.width);
+      this.testEl = this.createTestEl(el, style);
+      document.body.appendChild(this.testEl);
+
+      this.fitWords();
+      if (this.ifTextMustBeShorten) {
+        this.fitLetters();
+        this.insertEndingChar();
+      }
+      el.textContent = this.shortenText;
     }
-    el.textContent = this.shortenText;
+    else {
+      console.warn(this.selector + " does NOT exists");
+    }
   };
 
   TextShorterer.prototype.createTestEl = function(el, style) {
