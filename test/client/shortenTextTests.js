@@ -28,6 +28,7 @@
 
       shortenText(selector, text, maxLines);
 
+
       var result = document.querySelector(selector).textContent;
       assert.equal(result.trim(), expected);
     }
@@ -36,4 +37,4 @@
 
 })();
 
-
+//cat coverage/PhantomJS\ 1.9.8\ \(Linux\)/lcov | node ./node_modules/coveralls/bin/coveralls.js
