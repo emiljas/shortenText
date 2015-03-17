@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "gulp clientTest",
-    "coveralls": "./node_modules/karma/bin/karma start karma.coveralls.conf.js &&  cat coverage/PhantomJS\ 1.9.8\ \(Linux\)/lcov | node ./node_modules/coveralls/bin/coveralls.js"
+    "coveralls": "./node_modules/karma/bin/karma start karma.coveralls.conf.js &&  cat coverage/lcov | node ./node_modules/coveralls/bin/coveralls.js"
   },
   "author": "",
   "license": "ISC",
